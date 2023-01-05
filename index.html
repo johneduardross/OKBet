@@ -4,16 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="w-screen h-auto overflow-x-hidden font-sans">
-    
-        <section id="section-nav" class="fixed h-auto w-full top-0 z-50">
-            <div class="container w-full h-20 bg-slate-300 bg-opacity-10 backdrop-blur drop-shadow-lg shadow-inner mx-auto mt-4 rounded-3xl">
-                <div class="flex max-h-20">
+    <body class="overflow-x-hidden font-sans">
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION: NAVIGATION -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-nav" class="fixed h-auto w-full top-0 z-50 px-4 sm:px-0">
+            <div class="container w-full h-20 bg-zinc-900 bg-opacity-40 backdrop-blur drop-shadow-lg shadow-inner mx-auto mt-4 rounded-3xl">
+                <div class="flex max-h-20 justify-between">
                     <div class="flex align-center items-center h-20 w-3/12 py-2 pl-8"><img src="./materials/okbet - Copy.svg" alt="" class="block h-full w-auto mt-3 brightness-0 grayscale invert"></div>
-                    <div class="h-20 w-3/6 py-2">
-                        <ul class="flex gap-6 justify-center items-center h-full list-none text-white font-bold">
+                    <div class="h-20 w-3/6 py-2 hidden sm:block">
+                        <ul class="flex gap-6 justify-center items-center h-full list-none text-white font-bold cursor-pointer">
                             <li class="inline text-teal-400"><a hre="">Home</a></li>
                             <li class="inline hover:text-teal-400"><a hre=""></a>Sports</a></li>
                             <li class="inline hover:text-teal-400"><a hre=""></a>Game Rules</a></li>
@@ -22,23 +27,298 @@
                             <li class="inline hover:text-teal-400"><a hre=""></a>News</a></li>
                         </ul>
                     </div>
-                    <div class="flex items-center justify-end h-20 w-3/12 pr-8">
+                    <div class="flex items-center justify-end h-20 w-3/12 pr-8 hidden sm:flex">
                         <div class="flex justify-end items-center text-md gap-2 font-bold">
-                            <span class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-teal-400 hover:bg-teal-600 border-transparent border-2">Sign Up</span>
-                            <span class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-transparent border-white hover:border-teal-600 border-2 text-white hover:text-teal-600">Play</span>
+                            <button class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-teal-400 hover:bg-teal-600 border-transparent border-2">Sign Up</button>
+                            <button class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-transparent border-white hover:border-teal-600 border-2 text-white hover:text-teal-600">Play</button>
                         </div>
                     </div>
-                    <div class="h-20"></div>
+                    <div class="flex align-center items-center h-20 w-3/12 py-2 pr-8 justify-end sm:hidden"><i class="bi bi-list fa-10x"></i></div>
                 </div>
             </div>
         </section>
         
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION HERO BANNER -->
+        <!----------------------------------------------------------------------------------------------->
         <section id="section-hero" class="h-screen w-screen">
-            <div class=""><img src="./materials/hero1.webp"></div>
-            <div class=""><img src="./materials/coins.webp"></div>
-            <h1 class="text-6xl text-white font-bold uppercase tracking-tight">claim up to<br><span class="text-7xl text-teal-600 font-black">php 1000</span><br>security<br> deposit bonus</h1>
+            <div class=""><img src="./materials/hero1.webp" class="absolute sm:bg-center w-auto h-1/2 sm:h-4/5 bottom-0 -right-32 sm:right-0"></div>
+            <div class=""><img src="./materials/coins.webp" class="absolute w-full h-auto top-0 left-0"></div>
+            <div class=""><img src="./materials/Rectangle 1.png" class="absolute w-full h-auto -bottom-4 sm:-bottom-8"></div>
+            <h1 class="text-4xl sm:text-6xl text-white font-bold uppercase tracking-tight">claim up to<br><span class="text-5xl text-teal-600 font-black">php 1000</span><br>security<br> deposit bonus</h1>
         </section>
         
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION PAGCOR -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-pagcor" class="w-screen h-auto bg-zinc-900 px-6 py-12 sm:px-12 sm:py-24">
+            <div class="container flex flex-col sm:flex-row mx-auto">
+                <div class="w-full sm:w-5/12">
+                    <img class="w-full h-auto py-6 sm:py-16" src="./materials/pagcor.webp">
+                </div>
+                <div class="w-full sm:w-7/12 px-4 py-6 px-6 sm:py-16">
+                    <h1 class="text-4xl font-bold tracking-tight text-white">OKBET: THE LICENSED ONLINE<br>CASINO IN THE PHILIPPINES</h1>
+                    <p class="text-white text-md mt-12 text-justify">
+                        In the 21st century, where technology knows no bounds, the appeal of online casino entities has drastically grown, especially over the past years. What was once a simple pastime activity, has grown into an industry that is worth billions.
+                        <br><br>Nowadays, people across the globe engage in online casino games and sports betting activities to experience an adrenaline rush as well as excitement that are unlike any other. Putting the said factors into consideration, it can be said that there is a need for reputable entities that are going to ensure that online gambling aficionados, weekend warriors, or occasional gamblers, among others, are going to perform the aforementioned activities in a convenient and secure manner. Hence, Okbet Philippines came into fruition.
+                        <br><br>Okbet is an online casino Philippines entity that is licensed as well as regulated by the Philippine government. It obtained a license from the Philippine Amusement and Gaming Corporation (PAGCOR) to offer a wide array of games that many, particularly Filipinos can relate to. The long list includes online slots, online poker, online baccarat, online roulette, and sports betting, among others.
+                        <br><br>At Okbet, we pride ourselves with countless games week-in and week-out. Aside from online games, they also include popular sports betting activities such as basketball, football, boxing, cricket, mixed martial arts, rugby, and so on.
+                        <br><br>Simply put, there's so much to love about Okbet, but on top of the features that were elaborated above, there are other things that you are going to love with our top-notch online casino.
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION GAMES INFO-->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-games" class="relative">
+            <div class="w-screen bg-zinc-900">
+                <div class="container w-full h-auto flex flex-col mx-auto px-6 py-8 sm:px-12 sm:py-16">
+                    <div class="w-full sm:w-7/12">
+                        <div class="w-full h-auto px-6 sm:px-12">
+                            <h1 class="text-4xl font-bold text-white">OKBET Casino: Live Casino Games</h1>
+                            <p class="text-white text-md mt-6 sm:mt-12 text-justify">
+                                Online casinos have become one of the most popular types of entertainment over the past years. They're dependable, convenient, and available in almost every country- including the Philippines.
+                                <br><br>One of the finest things about live online casinos is that they are always altering in order to improve the experience of their customers. They are among the most amazing innovations ever. They give casino games a more human feel and encourage engagement, therefore taking the entertainment to a whole level. Here are some of the reasons why live casino games are becoming increasingly popular.
+                                <br><br>Because of the said attributes, Okbet Online Casino decided to delve into live casino games. But the question still stands: Why should you play live casino games from OkBet Philippines? Well, in addition to being engaging and entertaining, there are other attributes that make ours the better options compared to other entities out there.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-screen bg-zinc-800">
+                <div class="container w-full h-auto flex flex-col mx-auto px-6 py-8 sm:px-12 sm:py-16">
+                    <div class="w-full sm:w-7/12">
+                        <div class="w-full h-auto px-6 sm:px-12">
+                            <h1 class="text-4xl font-bold text-pink-500">OKBET Casino Games are More Exciting</h1>
+                            <p class="text-white text-md mt-12 text-justify">
+                                The live casino games that OKBET casino offers are more engaging since they give the feeling that you're not the only person in a particular room. Everything improves with the presence of actual merchants. You can converse with them, ask for clarifications, and read their body language, just as you would in traditional casinos-somewhat making you feel that you're inside a real casino. They can assist you in deciphering match results, odds, and rules.
+                                <br><br>Some of the most popular live casino games that we offer are baccarat, lucky 9, poker, roulette, blackjack, and so on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transparent absolute w-5/12 h-full top-0 right-0 flex align-center items-center hidden sm:block">
+                <img src="./materials/guy-phone.webp" alt="" class="absolute right-0 h-11/12">
+            </div>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION GAMES OPTIONS -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-options" class="relative bg-zinc-900 py-12 sm:py-24">
+            <section class="container mx-auto">
+                <div class="w-full sm:w-10/12 h-auto px-12 py-8 sm:px-24 sm:py-16">
+                    <h1 class="text-4xl font-bold text-white">OKBET Casino: Online Slots, Online Poker, Online Baccarat</h1>
+                    <p class="text-white text-md mt-12 text-justify w-full sm:w-10/12">
+                        Of our live casino games, online slots and online poker are some of our most popular ones. Perhaps because of the fact that the former is all about sheer luck, and you don't have to formulate some strategic approaches. While the latter is a game where luck plays a role, but also requires employing the right strategy, at the right time.
+                        <br><br>Let's take a closer look at the aforementioned games. Shall we?
+                    </p>
+                </div>
+            </section>
+            <section id="game-options relative" class="">
+                <div class="relative flex justify-start w-full h-auto relative left-0 mb-16">
+                    <div class="bg-card absolute bg-zinc-800 h-full w-9/12 rounded-tr-3xl rounded-br-3xl"></div>
+                    <div class="container mx-auto">
+                        <div class="card-left relative w-9/12 sm:w-7/12 pl-14 pr-14 py-8 sm:px-24 sm:py-16 h-auto z-10 float-left">
+                            <h1 class="text-3xl sm:text-4xl font-bold text-pink-500">OKBET Online Casino: Slots</h1>
+                            <p class="text-white text-md mt-12 text-justify max-h-40 sm:max-h-max overflow-scroll sm:overflow-auto">
+                                Spin and win games are a popular pastime in the Philippines and because of this, online slots are very popular at many online casinos. It's logical to assume that if online slots aren't available, gamblers will turn to alternative Internet- based options.
+                                <br><br>This is why, at OkBet Philippines, we make sure that we provide a wide selection of online slot games. We provide a variety of free and real money games for our customers to select from. Not only that, but they're accompanied by appealing themes that make online games more engaging, entertaining, and everything in between.
+                                <br><br>We all know that bonuses are one of the most appealing aspects of online slots games. That is why, at OkBet, we make certain that our bonuses are unrivaled in terms of accessibility, profitability, and everything else. Players can also receive welcome bonuses merely by joining up, as well as free spins for real money without having to pay.
+                            </p>
+                            <button class="inline cursor-pointer h-full w-auto rounded-md px-10 py-1 mt-6 bg-transparent border-white border-teal-400 hover:border-teal-600 border-2 text-white">How To Play</button>
+                        </div>
+                        <div class="relative w-1/3 sm:w-5/12 hidden sm:block"></div>
+                    </div>
+                    <img src="./materials/casino-online-slots.webp" alt="" class="card-image absolute w-5/12 sm:w-1/2 2xl:w-5/12 right-0 inset-y-0 sm:-inset-y-1/4 2xl:-inset-y-2/4">
+                </div>
+                <div class="relative flex justify-end w-full h-auto relative left-0 mb-16">
+                    <div class="bg-card absolute bg-zinc-800 h-full w-9/12 rounded-tl-3xl rounded-bl-3xl"></div>
+                    <div class="container mx-auto">
+                        <div class="card-right relative w-9/12 sm:w-7/12 pr-14 pl-14 py-8 sm:px-24 sm:py-16 h-auto z-10 float-right">
+                            <h1 class="text-3xl sm:text-4xl font-bold text-pink-500">OKBET Online Casino: Poker</h1>
+                            <p class="text-white text-md mt-12 text-justify max-h-40 sm:max-h-max overflow-scroll sm:overflow-auto">
+                                Poker is perhaps the most competitive game on the online casino market, as well as one of the most popular gambling games out there. In fact, it's the first thing that comes into mind when gambling is mentioned in a conversation. And because of its first-rate popularity, a myriad of poker versions have evolved over time. Included in the list are Omaha Poker, Stud Poker, and the most well- known: Texas Hold'em Poker.
+                                <br><br>If you're up for some adrenaline rush, then online poker is just what the doctor ordered for you. That's because it's safe to say that everything about it adds to the fun of playing the game: the waiting, the math, and the acting skills you'll get. Acting skills because you need to maintain your poker face, i.e hide your true feelings when playing since live online poker games, competing players may have an idea of the card that you have on hand. Simply put, it gives you a different kind of entertainment and touch of excitement that's unlike any other.
+                                <br><br>And while lady luck plays a significant role in poker, if you lack the necessary abilities, your overall experience may be disappointing and not as enjoyable as it should be.
+                            </p>
+                            <button class="inline cursor-pointer h-full w-auto rounded-md px-10 py-1 mt-6 bg-transparent border-white border-teal-400 hover:border-teal-600 border-2 text-white">How To Play</button>
+                        </div>
+                        <div class="relative w-1/3 sm:w-5/12 hidden sm:block"></div>
+                    </div>
+                    <img src="./materials/poker.webp" alt="" class="card-image absolute w-5/12 sm:w-1/2 2xl:w-5/12 left-0 2xl:-inset-y-1/4">
+                </div>
+                <div class="relative flex justify-start w-full h-auto relative left-0 mb-16">
+                    <div class="bg-card absolute bg-zinc-800 h-full w-9/12 rounded-tr-3xl rounded-br-3xl"></div>
+                    <div class="container mx-auto">
+                        <div class="card-left relative w-9/12 sm:w-7/12 pl-14 pr-14 py-8 sm:px-24 sm:py-16 h-auto z-10 float-left">
+                            <h1 class="text-3xl sm:text-4xl font-bold text-pink-500">OKBET Online Casino: Baccarat</h1>
+                            <p class="text-white text-md mt-12 text-justify max-h-40 sm:max-h-max overflow-scroll sm:overflow-auto">
+                                Baccarat is a French word, but it doesn't necessarily mean that it originated in France, the game traces its origins in Italy, where it was first introduced in the late 15th century under the name Baccara.
+                                <br><br>Bacarrat has been regarded as a pure game of chance and luck throughout its existence. In actuality, the player's only role in the game is to place a wager and wait for the outcome. In land-based games, the player never makes a strategic decision and only touches the cards if they have the greatest wager on their side.
+                                <br><br>All in all, baccarat is pretty much straightforward and players can wager on one of three single types of bets: Banker, Player, or Tie (standoff). You can place your chips (money equivalent) on one of the sections and wait for the dealer to move. If you're new to the game, you may be a bit overwhelmed at first, but it's one of the most straightforward games available at OKBET and other online casinos on the market.
+                            </p>
+                            <button class="inline cursor-pointer h-full w-auto rounded-md px-10 py-1 mt-6 bg-transparent border-white border-teal-400 hover:border-teal-600 border-2 text-white">How To Play</button>
+                        </div>
+                        <div class="relative w-1/3 sm:w-5/12 hidden sm:block"></div>
+                    </div>
+                    <img src="./materials/baccarat.webp" alt="" class="card-image absolute w-5/12 sm:w-1/2 2xl:w-5/12 right-0 2xl:-inset-y-1/4">
+                </div>
+            </section>
+        </section>
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION MORE INFO -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-infocard" class="relative bg-zinc-900 py-12 sm:py-24">
+            <section class="container mx-auto">
+                <div class="w-full sm:w-11/12 h-auto px-12 py-8 sm:px-24 sm:py-16">
+                    <h1 class="text-3xl sm:text-5xl font-bold text-white">OKBET Sports Betting Philippines: Making the Most of Slots, Poker, and Baccarat Experience</h1>
+                    <p class="text-white text-md mt-6 sm:mt-12 text-justify w-full sm:w-10/12">
+                        With OKBET, you've already made an exceptional choice when it comes to ensuring that your online casino Philippines experience is going to be as enjoyable, entertaining, convenient, and secure as it can be. The good news is that if you employ certain measures, you can take the said attributes to a whole new level and improve your chances of winning. Read on for details.
+                    </p>
+                </div>
+            </section>
+            <section class="container mx-auto w-full h-auto">
+                <div class="px-12 py-8 sm:px-24 sm:py-16 w-full h-auto">
+                    <div class="info-card w-full h-autopx-12 px-10 py-8 sm:px-24 sm:py-16 bg-zinc-800 rounded-3xl">
+                        <h1 class="text-3xl sm:text-5xl font-bold text-white">Prepare to lose</h1>
+                        <p class="text-white text-md mt-6 sm:mt-12 text-justify w-full max-h-40 sm:max-h-max overflow-scroll sm:overflow-auto">
+                            Chasing losses is heralded by many as the cardinal sin of online casino gaming. You should never chase losses regardless if you're playing on OkBet Philippines or another reputable site.
+                            <br><br>If you're unfamiliar with the term, chasing losses refers to increasing your stakes in order to make up for prior losses. It's a bad idea because you may wind up losing money faster rather than regaining your losses.
+                            <br><br>Rather than chase losses, you should consider taking a break and saving remaining funds for a different date. Alternatively, you can keep playing or betting while lowering your bets, if you still have enough money. Yes. Your luck may come around, but even if it doesn't, you would be able to stretch your money further.
+                            <br><br>The third option is to keep playing with the same stakes as your previous ones. This is a bit irrational, to say the least, but it has its advantages if you're still playing inside your budget. You might be able to recoup some of your losses if your luck improves rapidly and the strategies that you employ work. Bear in mind, though, that isn't the best way to look at things. That's because once you've lost money, it's gone for good, and you shouldn't be thinking about getting it back. Accept the loss, move on, and come back with a better strategy that can help you win games.
+                            <br><br>You should also keep in mind that a losing streak can last a long time and taking a break or lowering your stakes can go a long way when it comes to ensuring that you won't lose your hard-earned cash through online gambling losses.
+                        </p>
+                    </div>
+                </div>
+                <div class="container mx-auto w-full h-auto">
+                    <ul class="w-2/3 sm:w-1/2 mx-auto">
+                        <li class="active"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION ROUND UP -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-roundup" class="relative bg-zinc-900 px-6 py-12 sm:px-12 sm:py-24 pb-0">
+            <section class="container mx-auto flex flex-col sm:flex-row relative">
+                <div class="w-full sm:w-5/12 h-auto"><img src="./materials/OKBET-Play-A-Round-up-of-Casino-Games.webp" alt="" class="w-full h-auto"></div>
+                <div class="w-full sm:w-7/12 h-auto px-6 py-8 sm:px-24 sm:py-16">
+                    <h1 class="text-3xl sm:text-5xl font-bold text-white">OKBET Play: A Round-up of Casino Games</h1>
+                    <p class="text-white text-md mt-6 sm:mt-12 text-justify">
+                        The online casino Philippines market has experienced significant growth over the past years, and its growth is not going to stop anytime soon. OkBet, for instance, utilizes cutting-edge casino games that are backed by technological advancements.
+                        <br><br>If you've never played online slots, online poker, and online baccarat games, among others, then you should seriously consider playing them on the OkBet Play platform. At OkBet, we got you covered when it comes to fun, excitement, safety, security, and everything in between. Remember that by playing on our platform, you can rest assured that your overall experience is going to be as enjoyable as it can be.
+                        <br><br>Remember, at the end of the day, online casino gaming should be all about fun and enjoyment. You need to stop if you feel that you're losing inappropriate amounts of money.
+                        <br><br>Furthermore, in addition to online casino games, at OkBet, we also offer sports betting Philippines games.
+                    </p>
+                </div>
+            </section>
+        </section>
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION OVERVIEW -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-overview" class="relative bg-zinc-900 px-6 py-12 sm:px-12 sm:py-24 pt-0">
+            <div class="container mx-auto h-auto w-full px-6 py-8 sm:px-24 sm:py-16">
+                <h1 class="text-3xl sm:text-5xl font-bold text-white">OKBET Sports: An Overview</h1>
+                <p class="text-white text-md mt-6 sm:mt-12 text-justify">
+                    At present, the Philippines has largely embraced and legalized sports betting. Although there are still a couple of drawbacks in the said industry, for the most part, it's safe to say that it remains to deliver one of the best sports betting experiences in the world.
+                    <br><br>How is this possible? You ask. Well, with a wide array of retail and online sportsbooks, which are accessible both within the Philippines and other countries. Local bettors can wager with domestic online PAGCOR-approved sports betting sites such as OkBet Philippines as well as international sportsbooks that are licensed in the United Kingdom, the Caribbean, and so forth.
+                    <br><br>In the Philippines, Filipino sports bettors can have access to a ton of legal sports betting activities. The long list includes single-game wagering, parlays, live betting, and so forth. The good news is that the Philippine government is in some sort of a state of flux as of the moment; that said, laws may change in a heartbeat.
+                </p>
+            </div>
+        </section>
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION FEATURED -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-featured" class="relative bg-zinc-900 px-6 py-12 sm:px-12 sm:py-24">
+            <section class="container mx-auto flex relative pb-6 sm:pb-12">
+                <div class="w-10/12 mx-auto h-auto px-6 py-8 sm:px-24 sm:py-16">
+                    <h1 class="text-4xl sm:text-6xl font-bold text-white text-center">OKBET Sports: Features Games and Other Promotions</h1>
+                    <p class="text-white text-md mt-6 sm:mt-12 text-justify">
+                        We at OkBet offer OkBet promotions that include several of the most sought-after sports in the sports betting industry to satisfy your thirst for adrenaline rush. By signing up with us, you can wager on a wide array of sports. Sports that are played in the Philippines and other parts of the globe. Some of the most notable ones are elaborated below.
+                    </p>
+                </div>
+            </section>
+            <section class="container mx-auto w-full h-auto flex p-0 sm:px-16">
+                <div class="w-2/4 sm:w-1/5 h-auto py-8 sm:py-16 bg-zinc-800 rounded-3xl text-white z-10">
+                    <ul class="w-full">
+                        <li>Basketball</li>
+                        <li>Volleyball</li>
+                        <li class="active">Ice Hockey</li>
+                        <li>Boxing</li>
+                        <li>Rugby</li>
+                        <li>Mixed Martial Arts</li>
+                        <li>Tennis</li>
+                        <li>Badminton</li>
+                    </ul>
+                </div>
+                <div class="w-3/5 sm:w-4/5 h-auto py-8 sm:py-16 bg-gradient-to-r from-rose-900 to-zinc-900 rounded-3xl text-white -translate-x-8 sm:-translate-x-10">
+                    <div class="card-left relative w-8/23 sm:w-7/12 pl-12 pr-0 sm:pl-32 sm:pr-14 h-auto z-10 float-left relative">
+                        <h1 class="text-2xl sm:text-4xl font-bold text-white">Ice Hockey</h1>
+                        <p class="text-white text-md mt-6 sm:mt-12 text-left text-sm">
+                            Again, ice hockey is a sport that doesn't attract the same interest in terms of sports betting. The most popular ice hockey organization is the National Hockey League (NHL), and they play over 1,312 games per season. And the number of games gives huge opportunities for sports betting aficionados.
+                        </p>
+                        <button class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 mt-6 sm:mt-12 bg-teal-400 hover:bg-teal-600 border-transparent border-2 text-black font-bold">Learn more</button>
+                    </div>
+                    <img src="./materials/icehockey1.webp" alt="" class="absolute hidden sm:block">
+                </div>
+            </section>  
+        </section>
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!-- SECTION TIPS -->
+        <!----------------------------------------------------------------------------------------------->
+        <section id="section-tips" class="relative bg-zinc-900 px-6 py-12 sm:px-12 sm:py-24">
+            <section class="container mx-auto flex flex-col relative py-6 sm:py-12">
+                <div class="w-full sm:w-2/3 mx-auto h-auto px-12 py-8 sm:px-24 sm:py-16">
+                    <h1 class="text-4xl font-bold text-white text-center">OKBET Sports: Tips on How You Can Boost Your Chances of Winning</h1>
+                </div>
+                <img src="./materials/banner-tips-to-boost.webp" alt="">
+            </section>
+            
+            <section class="container mx-auto w-full h-auto pt-6 sm:py-12">
+                <div class="info-card mx-auto w-full sm:w-2/3 h-auto px-12 py-8 sm:px-24 sm:py-16 bg-gradient-to-r from-zinc-800 to-zinc-900 border-zinc-800 border-4 rounded-3xl">
+                    <h1 class="text-2xl sm:text-3xl font-bold text-white">Have achievable goals/objectives</h1>
+                    <p class="text-white text-md mt-6 sm:mt-12 text-left w-full">
+                        Basketball is extremely popular in the Philippines. In fact, it's heralded by many as the country's unofficial sport. Simply put, Filipinos are passionate about basketball. And they are spoiled for basketball events to wager on.
+                        <br><br>The long list of organizations that offer games that they choose from includes the National Basketball Association (NBA), Philippine Basketball Association (PBA), Maharlika Pilipinas Basketball League (MPBL), University Athletic Association of the Philippines (UAAP), National Collegiate Athletic Association (NCAA), and the Fédération Internationale de Basket-ball Amateur (FIBA), among others.
+                    </p>
+                </div>
+                <div class="container mx-auto w-full h-auto mt-6 sm:mt-12">
+                    <ul class="w-full sm:w-1/2 mx-auto">
+                        <li class="active"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container mx-auto flex flex-col relative py-6 sm:py-12">
+                <div class="w-full sm:w-2/3 mx-auto h-auto px-12 py-8 sm:px-24 sm:py-16">
+                    <h1 class="text-3xl sm:text-4xl font-bold text-white text-center">OKBET: Your One-stop Interactive Place for Your Gambling Needs</h1>
+                    <p class="text-white text-md mt-6 sm:mt-12 text-justify">
+                        OkBet is arguably your best one-stop interactive destination for all of your online casino and sports betting needs. That's because the OkBet casino site is safe, secure, and simple to navigate, and responsive, among other things.
+                        <br><br>All you have to do is register, and you'll be able to play not just for enjoyment and entertainment, but also for real money. That is, if you push the right buttons and make the right moves.
+                        <br><br>It's also simple to sign up. Just enter your username, password, full name, withdrawal (Personal number) PIN, and cell phone number, and you're good to go! You can, among other things, play OkBet Casino games, take advantage of OkBet promotions, and participate in OkBet sports events. Yes. It's that easy and hassle-free. If you have a referral code, you can use it to earn rewards. That's value for money (and time) that you can't obtain elsewhere.
+                        <br><br>So, if you're looking for a reputable online casino and sports betting site that meets all of the criteria listed above, OkBet is the place to go.
+                    </p>
+                </div>
+            </section>
+        </section>
+        
     </body>
 </html>
