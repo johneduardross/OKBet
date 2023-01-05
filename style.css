@@ -3,7 +3,7 @@
 } */
 
 #section-hero {
-    background-image: url("../materials/background.webp");
+    background-image: url("./materials/background.webp");
     position: relative;
 }
 #section-hero div:nth-child(1) img {
