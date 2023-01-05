@@ -14,10 +14,10 @@
         <!-- SECTION: NAVIGATION -->
         <!----------------------------------------------------------------------------------------------->
         <section id="section-nav" class="fixed h-auto w-full top-0 z-50 px-4 sm:px-0">
-            <div class="container w-full h-20 bg-zinc-900 bg-opacity-40 backdrop-blur drop-shadow-lg shadow-inner mx-auto mt-4 rounded-3xl">
+            <div id="nav-bar" class="container w-full h-20 bg-zinc-900 bg-opacity-70 sm:bg-opacity-40 backdrop-blur drop-shadow-lg shadow-inner mx-auto mt-4 rounded-3xl">
                 <div class="flex max-h-20 justify-between">
-                    <div class="flex align-center items-center h-20 w-3/12 py-2 pl-8"><img src="./materials/okbet - Copy.svg" alt="" class="block h-full w-auto mt-3 brightness-0 grayscale invert"></div>
-                    <div class="h-20 w-3/6 py-2 hidden sm:block">
+                    <div id="nav-logo" class="flex relative align-center items-center h-20 w-3/12 py-2 pl-8"><img src="./materials/okbet - Copy.svg" alt="" class="absolute block h-full w-auto brightness-0 grayscale invert"></div>
+                    <div id="nav-drawer" class="h-20 w-3/6 pt-4 sm:py-2 hidden sm:block">
                         <ul class="flex gap-6 justify-center items-center h-full list-none text-white font-bold cursor-pointer">
                             <li class="inline text-teal-400"><a hre="">Home</a></li>
                             <li class="inline hover:text-teal-400"><a hre=""></a>Sports</a></li>
@@ -26,6 +26,13 @@
                             <li class="inline hover:text-teal-400"><a hre=""></a>Promotions</a></li>
                             <li class="inline hover:text-teal-400"><a hre=""></a>News</a></li>
                         </ul>
+                        
+                        <div class="flex flex-row gap-2 items-center justify-center h-20 w-full sm:hidden">
+                            <div class="flex justify-end items-center text-md gap-2 font-bold">
+                                <button class="inline cursor-pointer h-full w-36 rounded-md px-6 py-1 bg-teal-400 hover:bg-teal-600 border-transparent border-2">Sign Up</button>
+                                <button class="inline cursor-pointer h-full w-36 rounded-md px-6 py-1 bg-transparent border-white border-teal-400 hover:border-teal-600 border-2 text-teal-400 hover:text-teal-600">Play</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex items-center justify-end h-20 w-3/12 pr-8 hidden sm:flex">
                         <div class="flex justify-end items-center text-md gap-2 font-bold">
@@ -33,7 +40,7 @@
                             <button class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-transparent border-white hover:border-teal-600 border-2 text-white hover:text-teal-600">Play</button>
                         </div>
                     </div>
-                    <div class="flex align-center items-center h-20 w-3/12 py-2 pr-8 justify-end sm:hidden"><i class="bi bi-list fa-10x"></i></div>
+                    <div id="nav-drawer-trigger" class="flex align-center items-center h-20 w-3/12 py-2 pr-8 justify-end sm:hidden"><i class="bi bi-list"></i></div>
                 </div>
             </div>
         </section>
@@ -41,7 +48,7 @@
         <!----------------------------------------------------------------------------------------------->
         <!-- SECTION HERO BANNER -->
         <!----------------------------------------------------------------------------------------------->
-        <section id="section-hero" class="h-screen w-screen">
+        <section id="section-hero" class="h-screen w-screen overflow-x-hidden">
             <div class=""><img src="./materials/hero1.webp" class="absolute sm:bg-center w-auto h-1/2 sm:h-4/5 bottom-0 -right-32 sm:right-0"></div>
             <div class=""><img src="./materials/coins.webp" class="absolute w-full h-auto top-0 left-0"></div>
             <div class=""><img src="./materials/Rectangle 1.png" class="absolute w-full h-auto -bottom-4 sm:-bottom-8"></div>
@@ -321,4 +328,5 @@
         </section>
         
     </body>
+    <script type="text/javascript" src="./script.js"></script>
 </html>
