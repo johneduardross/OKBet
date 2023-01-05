@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
-    <body>
-
-    <h1 clas="underline underline-offset-8">The script src attribute</h1>
-
+    <body class="w-screen h-auto overflow-x-hidden font-sans">
+    
+        <section id="section-nav" class="fixed h-auto w-full top-0 z-50">
+            <div class="container w-full h-20 bg-slate-300 bg-opacity-10 backdrop-blur drop-shadow-lg shadow-inner mx-auto mt-4 rounded-3xl">
+                <div class="flex max-h-20">
+                    <div class="flex align-center items-center h-20 w-3/12 py-2 pl-8"><img src="../materials/okbet - Copy.svg" alt="" class="block h-full w-auto mt-3 brightness-0 grayscale invert"></div>
+                    <div class="h-20 w-3/6 py-2">
+                        <ul class="flex gap-6 justify-center items-center h-full list-none text-white font-bold">
+                            <li class="inline text-teal-400"><a hre="">Home</a></li>
+                            <li class="inline hover:text-teal-400"><a hre=""></a>Sports</a></li>
+                            <li class="inline hover:text-teal-400"><a hre=""></a>Game Rules</a></li>
+                            <li class="inline hover:text-teal-400"><a hre=""></a>Claim Free Bet</a></li>
+                            <li class="inline hover:text-teal-400"><a hre=""></a>Promotions</a></li>
+                            <li class="inline hover:text-teal-400"><a hre=""></a>News</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-end h-20 w-3/12 pr-8">
+                        <div class="flex justify-end items-center text-md gap-2 font-bold">
+                            <span class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-teal-400 hover:bg-teal-600 border-transparent border-2">Sign Up</span>
+                            <span class="inline cursor-pointer h-full w-auto rounded-md px-6 py-1 bg-transparent border-white hover:border-teal-600 border-2 text-white hover:text-teal-600">Play</span>
+                        </div>
+                    </div>
+                    <div class="h-20"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section-hero" class="h-screen w-screen">
+            <div class=""><img src="../materials/hero1.webp"></div>
+            <div class=""><img src="../materials/coins.webp"></div>
+            <h1 class="text-6xl text-white font-bold uppercase tracking-tight">claim up to<br><span class="text-7xl text-teal-600 font-black">php 1000</span><br>security<br> deposit bonus</h1>
+        </section>
+        
 
     </body>
 </html>

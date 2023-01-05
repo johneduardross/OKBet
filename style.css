@@ -1,3 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+#section-hero {
+    background-image: url("../materials/background.webp");
+    position: relative;
+}
+#section-hero div:nth-child(1) img {
+    position: absolute;
+    width: 50;
+    height: auto;
+    bottom: 0;
+    right: 0;
+}
+#section-hero div:nth-child(2) img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+#section-hero h1 {
+    position: absolute;
+    bottom: 27%;
+    left: 20%;
+}
